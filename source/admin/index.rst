@@ -16,3 +16,9 @@ Notatki admina
     dyski.rst
     bash.rst
     apache2.4.rst
+    debian.rst
+    sieci.rst
+    ruby.rst
+    influxdb.rst
+    haproxy.rst
+    wordpress.rst

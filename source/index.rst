@@ -9,6 +9,7 @@ Czyli zbiór narzędzi i kawałków kodu/poleceń  ułatwiających życie i prac
 
 
 
+
 .. toctree::
     :maxdepth: 4
     :name: mastertoc   
@@ -33,6 +34,8 @@ Czyli zbiór narzędzi i kawałków kodu/poleceń  ułatwiających życie i prac
 
 
 
+.. note:: snip@uchacz.it
+  Jeśli wpadł Ci w oko błąd na tej stronie to mile widziany  feedback pod tym adres email :) Z góry dziękuje :)
 
 
 
