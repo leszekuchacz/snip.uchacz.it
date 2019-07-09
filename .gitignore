@@ -1,0 +1,7 @@
+.idea/
+Makefile
+build/
+deploy.sh
+source/_static/
+source/conf.py
+*.swp

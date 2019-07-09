@@ -5,8 +5,8 @@ Wordpress
 
 
 
-Dodanie użtkownika przez MySql
--------------------------------
+Dodanie użtkownika przez MySql w Wordpresie
+--------------------------------------------
 .. index:: mysql
 .. code-block:: mysql
    :linenos:
@@ -19,3 +19,27 @@ Dodanie użtkownika przez MySql
      INSERT INTO `databasename`.`wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES (NULL, '4', 'wp_user_level', '10');
 
 
+Podmiana ścieżek absolutnych w Wordpresie
+------------------------------------------
+.. index:: mysql
+.. code-block:: mysql
+   :linenos:
+
+   UPDATE wp_posts SET guid = replace(guid, '/var/www/stare/','/var/www/nowe/');
+
+   UPDATE wp_posts SET post_content = replace(post_content, '/var/www/stare/','/var/www/nowe/');
+
+   UPDATE wp_postmeta SET meta_value = replace(meta_value,'/var/www/stare/','/var/www/nowe/');
+
+   UPDATE wp_options SET option_value = replace(option_value,'/var/www/stary','/var/www/nowy');
+
+
+
+Podmiana ścieżek absolutnych w Wordpresie na dumpie od bazy
+------------------------------------------------------------
+.. index:: mysqldump, sed
+.. code-block:: bash
+   :linenos:
+
+   mysqldump wordpress > w.sql
+   sed -i w.sql -e 's#/var/www/stary/#/var/www/nowy/#g'

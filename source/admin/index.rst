@@ -22,3 +22,5 @@ Notatki admina
     influxdb.rst
     haproxy.rst
     wordpress.rst
+    keystore.rst
+    openssl.rst
