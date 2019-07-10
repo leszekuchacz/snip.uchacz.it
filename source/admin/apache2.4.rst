@@ -39,3 +39,14 @@ Włączenie zawieszki 503
     #4 Testujemy konfiguracje i restartujemy Apacha2
       apache2ctl configtest
       service apache2 restart
+
+Rewrity
+-----------------------------------
+.. index:: rewrite
+
+.. code-block:: bash
+   :linenos:
+
+   # L - last( przerwy przetwarzanie innyc reguł)
+   # Strona z kodem 301 wskazaniem na nową lokalizacje
+   RewriteRule ^/omnie/                  http://%{HTTP_HOST}/pl/omnie/            [R=301,L]

@@ -24,3 +24,6 @@ Notatki admina
     wordpress.rst
     keystore.rst
     openssl.rst
+    varnish.rst
+    python.rst
+    ansible.rst
