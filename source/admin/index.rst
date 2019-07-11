@@ -27,3 +27,5 @@ Notatki admina
     varnish.rst
     python.rst
     ansible.rst
+    postgres.rst
+    mysql.rst
