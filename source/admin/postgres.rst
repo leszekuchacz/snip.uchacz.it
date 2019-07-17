@@ -131,8 +131,7 @@ Uprawnienia
 
 Zmiana właściciela
 -----------------------------------
-.. index:: grant,revoke
-
+.. index:: psql
 .. code-block:: bash
    :linenos:
 
@@ -144,10 +143,11 @@ Zmiana właściciela
 
 Insert/Update
 -----------------------------------
-.. index:: grant,revoke
+.. index:: update, insert
 
-.. code-block:: insert,update
+.. code-block:: bash
    :linenos:
+   
    Begin;
    UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';
    Commit;
