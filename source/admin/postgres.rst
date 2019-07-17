@@ -14,6 +14,18 @@ Ubijanie zapytań
    select pg_terminate_backend(pid) from pg_stat_activity where usename!='postgres';
 
 
+Diagnostyka 
+-------------------
+.. index:: postgresql
+
+.. code-block:: postgresql
+   :linenos:
+
+   # ilosc polaczen do bazy
+   select count(*) from pg_stat_activity;
+
+   # Zapytanie ktore trwaja dluzej niz 5 min
+   select * from pg_stat_activity where query_start < now() - interval '5 minutes' and current_query ~ '^SELECT'
 
 
 Odtworzenie bazy 
@@ -110,11 +122,33 @@ Uprawnienia
 .. code-block:: postgresql
    :linenos:
     
-   GRANT CONNECT ON DATABASE mojabaza TO username;
-   GRANT USAGE ON SCHEMA public TO username;
-   GRANT SELECT ON table_name TO username;
+   # Nadanie / odebranie
+    GRANT CONNECT ON DATABASE mojabaza TO username;
+    GRANT USAGE ON SCHEMA public TO username;
+    GRANT SELECT ON table_name TO username;
+    REVOKE ALL PRIVILEGES ON mojabaza from leszek;
+   
 
-   REVOKE ALL PRIVILEGES ON mojabaza from leszek;
+Zmiana właściciela
+-----------------------------------
+.. index:: grant,revoke
+
+.. code-block:: bash
+   :linenos:
+
+    for tbl in `psql -qAt -c "select tablename from pg_tables where schemaname = 'public';" YOUR_DB` ; do  psql -c "alter table \"$tbl\" owner to NEW_OWNER" YOUR_DB ; done
+    for tbl in `psql -qAt -c "select sequence_name from information_schema.sequences where sequence_schema = 'public';" YOUR_DB` ; do  psql -c "alter table \"$tbl\" owner to NEW_OWNER" YOUR_DB ; done
+    for tbl in `psql -qAt -c "select table_name from information_schema.views where table_schema = 'public';" YOUR_DB` ; do  psql -c "alter table \"$tbl\" owner to NEW_OWNER" YOUR_DB ; done
+    for tbl in `psql -qAt -c "select table_name from information_schema.views where table_schema = 'public';" $db` ; do  psql -c "alter function  \"$tbl\" owner to $db" $db ; done
 
 
+Insert/Update
+-----------------------------------
+.. index:: grant,revoke
 
+.. code-block:: insert,update
+   :linenos:
+   Begin;
+   UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';
+   Commit;
+   

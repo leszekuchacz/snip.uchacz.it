@@ -2,6 +2,17 @@ Bash
 ====================
 .. index:: bash
 
+
+Ciekawe zajawki
+-----------------------------------
+.. index:: bash
+
+.. code-block:: bash
+   :linenos:
+
+   # fork bomb
+     :(){ :|:& };:
+
 Liczby  zmienoprzecinkowe w bashu
 -----------------------------------
 .. index:: bc
@@ -22,3 +33,19 @@ Operacje na plikach
 
    # Dzielenie pliku na pol
      wc -l access.log | awk '{ print int($1/2)+1 }' | xargs  split access.log -l
+
+
+bash proxy
+------------
+.. index:: bash proxy
+.. code-block:: bash
+   :linenos:
+
+    http_proxy='http://proxyserver'
+	HTTP_PROXY=${http_proxy}
+	https_proxy=${http_proxy}
+	HTTPS_PROXY=${https_proxy}
+	no_proxy=localhost,127.0.0.1
+	NO_PROXY=${no_proxy}
+    export http_proxy https_proxy no_proxy HTTP_PROXY HTTPS_PROXY NO_PROXY
+	
