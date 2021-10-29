@@ -1,5 +1,6 @@
 Bash
 ====================
+.. index:: bash
 
 
 Ciekawe zajawki
@@ -7,11 +8,16 @@ Ciekawe zajawki
 
 fork bomb
 ---------
-This is a sub heading to install using pip:: 
+.. index:: bash
+
+.. code-block:: python
+
    :(){ :|:& };:
 
 Liczby  zmienoprzecinkowe w bashu
 -----------------------------------
+.. index:: bc
+
 .. code-block:: bash
    :linenos:
 
