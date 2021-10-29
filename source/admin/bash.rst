@@ -10,8 +10,6 @@ fork bomb
 This is a sub heading to install using pip
 
 :: 
-   :linenos:
-
    :(){ :|:& };:
 
 Liczby  zmienoprzecinkowe w bashu
