@@ -4,14 +4,16 @@ Bash
 
 
 Ciekawe zajawki
------------------------------------
+===============
+
+fork bomb
+---------
 .. index:: bash
 
-.. code-block:: bash
+.. code-block:: python
    :linenos:
 
-   # fork bomb
-     :(){ :|:& };:
+   :(){ :|:& };:
 
 Liczby  zmienoprzecinkowe w bashu
 -----------------------------------
