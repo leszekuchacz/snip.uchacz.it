@@ -1,6 +1,5 @@
 Bash
 ====================
-.. index:: bash
 
 
 Ciekawe zajawki
@@ -8,8 +7,6 @@ Ciekawe zajawki
 
 fork bomb
 ---------
-.. index:: bash
-
 .. code-block:: python
    :linenos:
 
@@ -17,8 +14,6 @@ fork bomb
 
 Liczby  zmienoprzecinkowe w bashu
 -----------------------------------
-.. index:: bc
-
 .. code-block:: bash
    :linenos:
 
