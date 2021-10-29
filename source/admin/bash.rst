@@ -1,6 +1,5 @@
 Bash
 ====================
-.. index:: bash
 
 
 Ciekawe zajawki
@@ -8,7 +7,6 @@ Ciekawe zajawki
 
 fork bomb
 ---------
-.. index:: bash
 
 .. code-block:: python
 
