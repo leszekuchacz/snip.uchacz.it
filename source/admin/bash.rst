@@ -7,6 +7,8 @@ Ciekawe zajawki
 
 fork bomb
 ---------
+This is a sub heading to install using pip
+
 .. code-block:: python
    :linenos:
 
