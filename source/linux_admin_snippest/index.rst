@@ -1,5 +1,5 @@
-Notatki admina
-===============
+Linux Admin Snippest
+=====================
 
 
 

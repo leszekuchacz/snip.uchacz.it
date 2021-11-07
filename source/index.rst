@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Piórnik
+Introduction
 =====================================
 Czyli zbiór narzędzi i kawałków kodu/poleceń  ułatwiających życie i prace na linuksie :) 
 
@@ -15,11 +15,12 @@ Czyli zbiór narzędzi i kawałków kodu/poleceń  ułatwiających życie i prac
     :name: mastertoc   
     :hidden:
 
-    tools/index.rst
-    admin/index.rst
+    linux_software/index.rst
+    linux_admin_snippest/index.rst
 
+Indices and tables
+==================
 * :ref:`genindex`
-
 
 .. seealso::
 

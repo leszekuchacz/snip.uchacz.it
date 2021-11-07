@@ -1,10 +1,10 @@
-Narzedzia dla linuxa
+Linux Software
 =====================
 
 .. toctree::
     :maxdepth: 4
     
-    automatyzacja.rst
+    automation.rst
     diagramy.rst
     monitoring.rst
     network.rst
