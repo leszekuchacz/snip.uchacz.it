@@ -23,11 +23,9 @@ Operacje na plikach
 ----------------------
 .. index:: split,wc
 
-
+Split file
 .. code-block:: bash
-   :linenos:
 
-   # Dzielenie pliku na pol
      wc -l access.log | awk '{ print int($1/2)+1 }' | xargs  split access.log -l
 
 
