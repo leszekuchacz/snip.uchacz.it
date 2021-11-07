@@ -24,6 +24,7 @@ Operacje na plikach
 .. index:: split,wc
 
 Split file
+
 .. code-block:: bash
 
      wc -l access.log | awk '{ print int($1/2)+1 }' | xargs  split access.log -l
