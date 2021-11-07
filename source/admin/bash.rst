@@ -23,6 +23,7 @@ Operacje na plikach
 ----------------------
 .. index:: split,wc
 
+
 .. code-block:: bash
    :linenos:
 
