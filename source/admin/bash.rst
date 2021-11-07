@@ -24,6 +24,7 @@ Liczby  zmienoprzecinkowe w bashu
 Operacje na plikach
 ----------------------
 .. index:: split,wc
+
 .. code-block:: bash
    :linenos:
 
