@@ -1,20 +1,17 @@
 Bash
 ====================
+.. index:: BNF, grammar, syntax, notation
 
-
-Ciekawe zajawki
-===============
 
 fork bomb
 ---------
 
-.. code-block:: python
+.. code-block:: bash
 
    :(){ :|:& };:
 
 Liczby  zmienoprzecinkowe w bashu
 -----------------------------------
-.. index:: bc
 
 .. code-block:: bash
    :linenos:
