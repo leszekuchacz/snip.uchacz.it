@@ -5,8 +5,7 @@
 
 Introduction
 =====================================
-Czyli zbiór narzędzi i kawałków kodu/poleceń  ułatwiających życie i prace na linuksie :) 
-
+A collection of tools and snippest I use in my work.
 
 
 
@@ -25,19 +24,16 @@ Indices and tables
 .. seealso::
 
  `uchacz.it <https://uchacz.it>`_
-    Usługi programowanie w Unity3d, Administracja zdalna, DevOps, Hosting dla twojego biznesu.
+   Here I work (B2B)
 
  `blog.uchacz.it <https://blog.uchacz.it>`_
-    OPOWIEŚCI Z ŚWIATA QWERTY I TAKIE TAM
+   Polish blog about IT and my life
 
  `blog.uchacz.it/piornik/ <https://blog.uchacz.it/piornik/>`_
-    Stara wersja piórnika. 
+   old version of this
 
-
-
-.. note:: snip@uchacz.it
-  Jeśli wpadł Ci w oko błąd na tej stronie to mile widziany  feedback pod tym adres email :) Z góry dziękuje :)
-
+ `<https://github.com/leszekuchacz/snip.uchacz.it/tree/develop>`_
+    Report bugs on email(snip@uchacz.it) or just change it on github :) Thanku you! <3
 
 
 :Realase: |release| 

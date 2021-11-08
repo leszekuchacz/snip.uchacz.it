@@ -1,6 +1,7 @@
 .idea/
 Makefile
 build/
+target/
 deploy.sh
 source/_static/
 source/conf.py

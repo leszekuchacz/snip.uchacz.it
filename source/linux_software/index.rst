@@ -5,14 +5,13 @@ Linux Software
     :maxdepth: 4
     
     automation.rst
-    diagramy.rst
+    diagrams.rst
     monitoring.rst
-    network.rst
-    paint.rst
-    pass.rst
-    private_cloud.rst
-    rdp.rst
-    server_dashboard.rst
+    network_analytics.rst
+    image_editor.rst
+    password_apps.rst
+    remote_desktop.rst
+    server_utilities.rst
     terminal.rst
     video.rst
     web_notes.rst

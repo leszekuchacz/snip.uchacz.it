@@ -1,24 +1,28 @@
-Zajawki do konsoli 
+Terminsal utilities
 =======================
 
-.. _tmux: https://github.com/tmux/tmux/wiki
  
-tmux_
+tmux
 ------  
+
+.. index:: tmux
+
+https://github.com/tmux/tmux/wiki
+
 Trzyma kilka sesji terminalu w jednej, możliwość opuszczenia okna( włączenie jego dalszej pracy w tle) i ponowne przyłączenie.
 
-.. image:: mux.png
+.. image:: _static/mux.png
    :width: 200pt
    :align: center
    :alt: tmux
 
-.. index:: tmux
 
-
-.. _ttyrec: https://github.com/mjording/ttyrec
-
-ttyrec_
+ttyrec
 -------
-Nagrywanie, odtwarzania sesji terminalowej i konwersja sesji do formatu gif.
 
 .. index:: ttyrec
+
+https://github.com/mjording/ttyrec
+
+Nagrywanie, odtwarzania sesji terminalowej i konwersja sesji do formatu gif.
+

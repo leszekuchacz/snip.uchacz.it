@@ -1,9 +1,14 @@
-Monitoring zasobow
-=================================
-.. _glances: https://nicolargo.github.io/glances/
+Monitoring 
+============
 
-glances_
+
+
+Glances
 ---------
+
+.. index:: glances, monitoring, htop
+
+https://nicolargo.github.io/glances/
+
 Ładniejszy htop z bajerami, możliwy export danych do grafany.
 
-.. index:: glances 
